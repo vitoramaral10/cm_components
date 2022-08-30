@@ -1,7 +1,7 @@
 library cm_components;
 
 export 'components/cm_alert.dart';
-export 'components/cm_alert_dialog.dart';
+export 'components/cm_dialog.dart';
 export 'components/cm_badge.dart';
 export 'components/cm_button.dart';
 export 'components/cm_button_circle.dart';
