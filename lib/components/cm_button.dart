@@ -8,6 +8,7 @@ class CMButton extends StatelessWidget {
   final bool? sm;
   final VoidCallback? onPressed;
   final Color? backgroundColor;
+  final IconData? icon;
 
   const CMButton({
     Key? key,
@@ -16,6 +17,7 @@ class CMButton extends StatelessWidget {
     this.sm,
     this.onPressed,
     this.backgroundColor,
+    this.icon,
   }) : super(key: key);
 
   @override
@@ -53,8 +55,17 @@ class CMButton extends StatelessWidget {
           }),
         ),
         onPressed: onPressed,
-        child: Text(
-          text,
+        child: Row(
+          children: [
+            if (icon != null)
+              Padding(
+                padding: const EdgeInsets.only(right: 8.0),
+                child: Icon(icon),
+              ),
+            Text(
+              text,
+            ),
+          ],
         ),
       ),
     );
