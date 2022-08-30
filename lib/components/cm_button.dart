@@ -56,6 +56,7 @@ class CMButton extends StatelessWidget {
         ),
         onPressed: onPressed,
         child: Row(
+          mainAxisSize: MainAxisSize.min,
           children: [
             if (icon != null)
               Padding(
