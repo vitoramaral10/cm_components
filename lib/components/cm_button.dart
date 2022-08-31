@@ -63,6 +63,7 @@ class CMButton extends StatelessWidget {
                 padding: const EdgeInsets.only(right: 8.0),
                 child: Icon(icon),
               ),
+            if (icon != null) const Spacer(),
             Text(
               text,
             ),
