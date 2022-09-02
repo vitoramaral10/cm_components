@@ -63,7 +63,7 @@ class CMDropdownButton extends StatelessWidget {
           fontSize: 16,
           color: CMColors.dark,
         ),
-        fillColor: Colors.orange,
+        fillColor: CMColors.orangeDefault,
         border: const OutlineInputBorder(),
         errorBorder: const OutlineInputBorder(
           borderSide: BorderSide(color: CMColors.danger),
