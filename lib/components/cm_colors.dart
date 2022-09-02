@@ -17,6 +17,10 @@ class CMColors {
 
   static const dark = Color(0xff222529);
 
+  static const black = Color(0xff000000);
+
+  static const white = Color(0xffffffff);
+
   static const blueDefault = Color(0xff0d6efd);
 
   static const blue100 = Color(0xffcfe2ff);
