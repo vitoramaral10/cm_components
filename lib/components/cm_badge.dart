@@ -35,6 +35,12 @@ class CMBadge extends StatelessWidget {
           : null,
       label: Text(
         text,
+        style: TextStyle(
+            color: (backgroundColor ?? Theme.of(context).primaryColor)
+                        .computeLuminance() >
+                    0.5
+                ? CMColors.dark
+                : CMColors.light),
       ),
     );
   }
