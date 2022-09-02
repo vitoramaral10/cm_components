@@ -37,7 +37,7 @@ class CMBadge extends StatelessWidget {
         text,
       ),
       labelStyle: TextStyle(
-        fontSize: 10,
+        fontSize: 12,
         color: color ??
             ((backgroundColor == CMColors.warning ||
                     backgroundColor == CMColors.light)
