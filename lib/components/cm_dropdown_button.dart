@@ -70,9 +70,9 @@ class CMDropdownButton extends StatelessWidget {
         ),
         enabledBorder: const OutlineInputBorder(),
         focusedBorder: const OutlineInputBorder(),
-        disabledBorder: OutlineInputBorder(
+        disabledBorder: const OutlineInputBorder(
           borderSide: BorderSide(
-            color: CMColors.text.muted,
+            color: CMColors.gray400,
           ),
         ),
         focusedErrorBorder: const OutlineInputBorder(

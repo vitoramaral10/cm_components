@@ -40,7 +40,7 @@ class CMButton extends StatelessWidget {
             return (backgroundColor ?? Theme.of(context).primaryColor)
                         .computeLuminance() >
                     0.5
-                ? CMColors.text.dark
+                ? CMColors.dark
                 : Colors.white;
           }),
           overlayColor: MaterialStateProperty.all(

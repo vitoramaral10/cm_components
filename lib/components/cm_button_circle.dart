@@ -33,35 +33,35 @@ class CMButtonCircle extends StatelessWidget {
         style: ButtonStyle(
           shape: MaterialStateProperty.all(const CircleBorder()),
           side: MaterialStateProperty.all(BorderSide(
-            color: backgroundColor ?? CMColors.background.primary,
+            color: backgroundColor ?? CMColors.primary,
           )),
           backgroundColor: MaterialStateProperty.all(
             outline == true
                 ? Colors.white
-                : backgroundColor ?? CMColors.background.primary,
+                : backgroundColor ?? CMColors.primary,
           ),
           foregroundColor: MaterialStateProperty.resolveWith((states) {
             if (states.contains(MaterialState.hovered)) {
-              return (backgroundColor == CMColors.background.warning ||
-                      backgroundColor == CMColors.background.light)
-                  ? CMColors.text.dark
+              return (backgroundColor == CMColors.warning ||
+                      backgroundColor == CMColors.light)
+                  ? CMColors.dark
                   : Colors.white;
             }
 
             return outline == true
-                ? backgroundColor ?? CMColors.background.primary
-                : (backgroundColor == CMColors.background.warning ||
-                        backgroundColor == CMColors.background.light)
-                    ? CMColors.text.dark
+                ? backgroundColor ?? CMColors.primary
+                : (backgroundColor == CMColors.warning ||
+                        backgroundColor == CMColors.light)
+                    ? CMColors.dark
                     : Colors.white;
           }),
           overlayColor: MaterialStateProperty.all(
-            backgroundColor ?? CMColors.background.primary,
+            backgroundColor ?? CMColors.primary,
           ),
           textStyle: MaterialStateProperty.resolveWith((states) {
             return TextStyle(
               fontSize: 14,
-              color: backgroundColor ?? CMColors.background.primary,
+              color: backgroundColor ?? CMColors.primary,
               fontWeight: FontWeight.w500,
             );
           }),

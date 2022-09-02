@@ -38,7 +38,7 @@ class CMButtonOutline extends StatelessWidget {
             if (states.contains(MaterialState.hovered)) {
               return (backgroundColor ?? CMColors.primary).computeLuminance() >
                       0.5
-                  ? CMColors.text.dark
+                  ? CMColors.dark
                   : Colors.white;
             }
 

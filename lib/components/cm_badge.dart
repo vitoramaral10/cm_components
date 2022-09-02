@@ -28,7 +28,7 @@ class CMBadge extends StatelessWidget {
     return Container(
       width: txtSize.width + 22 + (icon != null ? 10 : 0),
       decoration: BoxDecoration(
-        color: backgroundColor ?? CMColors.background.primary,
+        color: backgroundColor ?? CMColors.primary,
         borderRadius: BorderRadius.all(
           Radius.circular(radius ?? 4),
         ),
@@ -44,10 +44,10 @@ class CMBadge extends StatelessWidget {
                   icon,
                   size: 10,
                   color: color ??
-                      ((backgroundColor == CMColors.alert.warning ||
-                              backgroundColor == CMColors.alert.light)
-                          ? CMColors.text.dark
-                          : Colors.white),
+                      ((backgroundColor == CMColors.warning ||
+                              backgroundColor == CMColors.light)
+                          ? CMColors.dark
+                          : CMColors.light),
                 )
               : Container(),
           const SizedBox(
@@ -57,10 +57,10 @@ class CMBadge extends StatelessWidget {
             text,
             style: TextStyle(
               color: color ??
-                  ((backgroundColor == CMColors.alert.warning ||
-                          backgroundColor == CMColors.alert.light)
-                      ? CMColors.text.dark
-                      : Colors.white),
+                  ((backgroundColor == CMColors.warning ||
+                          backgroundColor == CMColors.light)
+                      ? CMColors.dark
+                      : CMColors.light),
               fontSize: 10,
               fontWeight: FontWeight.w600,
             ),

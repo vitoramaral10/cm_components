@@ -23,7 +23,7 @@ class CMAlert extends StatelessWidget {
       padding: const EdgeInsets.all(16),
       decoration: BoxDecoration(
         borderRadius: const BorderRadius.all(Radius.circular(8)),
-        color: color ?? CMColors.alert.primary,
+        color: color ?? CMColors.warning,
       ),
       child: Row(
         children: [
@@ -33,10 +33,10 @@ class CMAlert extends StatelessWidget {
                 : Text(
                     text!,
                     style: TextStyle(
-                      color: (color == CMColors.alert.warning ||
-                              color == CMColors.alert.light)
-                          ? CMColors.text.dark
-                          : Colors.white,
+                      color:
+                          (color == CMColors.warning || color == CMColors.light)
+                              ? CMColors.dark
+                              : CMColors.light,
                     ),
                   ),
           ),

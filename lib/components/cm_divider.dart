@@ -11,7 +11,7 @@ class CMDivider extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.symmetric(vertical: 8.0),
       child: Divider(
-        color: color ?? CMColors.text.grey[300],
+        color: color ?? CMColors.gray300,
         height: 1,
       ),
     );

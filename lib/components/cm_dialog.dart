@@ -30,8 +30,8 @@ class CMDialog extends StatelessWidget {
               child: header,
             ),
           if (header != null)
-            Divider(
-              color: CMColors.text.grey[300],
+            const Divider(
+              color: CMColors.gray300,
               height: 1,
             ),
           Padding(
@@ -39,8 +39,8 @@ class CMDialog extends StatelessWidget {
             child: body,
           ),
           if (footer != null)
-            Divider(
-              color: CMColors.text.grey[300],
+            const Divider(
+              color: CMColors.gray300,
               height: 1,
             ),
           if (footer != null)
