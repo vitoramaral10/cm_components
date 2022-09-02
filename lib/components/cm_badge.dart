@@ -35,14 +35,14 @@ class CMBadge extends StatelessWidget {
           : null,
       label: Text(
         text,
-        style: TextStyle(
-          fontSize: 10,
-          color: color ??
-              ((backgroundColor == CMColors.warning ||
-                      backgroundColor == CMColors.light)
-                  ? CMColors.dark
-                  : CMColors.light),
-        ),
+      ),
+      labelStyle: TextStyle(
+        fontSize: 10,
+        color: color ??
+            ((backgroundColor == CMColors.warning ||
+                    backgroundColor == CMColors.light)
+                ? CMColors.dark
+                : CMColors.light),
       ),
     );
   }
