@@ -25,7 +25,7 @@ class CMColors {
 
   static const blue100 = Color(0xffcfe2ff);
 
-  static const blue200 = Color(0xff6ea8fe);
+  static const blue200 = Color(0xff9EC5FE);
 
   static const blue300 = Color(0xff6ea8fe);
 
